@@ -21,6 +21,7 @@ function SkillsSection(props) {
       </div>
       <p className="bigFontDescription">- Development of Web Applications in React</p>
       <p className="bigFontDescription">- Responsive Web Applications</p>
+      <p className="bigFontDescription">- Git Version Control</p>
       <div id="Projects"></div>
     </section>
   );

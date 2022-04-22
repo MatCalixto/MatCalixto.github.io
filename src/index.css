@@ -504,7 +504,7 @@
   }
   /* end, last div */
   #Contact {
-    padding-bottom: 0vh;
+    padding-bottom: 20px;
     background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
     background-color: #292828;
     display: flex;

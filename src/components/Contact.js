@@ -1,7 +1,7 @@
 function Contact(props) {
   return (
     <section
-      style={{ backgroundPosition: `center ${props.pos}px` }}
+      style={{ backgroundPosition: `center ${props.pos + 350}px` }}
       id="Contact"
     >
       <div className="contactDiv">
