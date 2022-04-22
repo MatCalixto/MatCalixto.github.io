@@ -3,7 +3,8 @@ function QuoteSection() {
     <section id="quoteSection">
       <div id="quoteDiv">
         <p id="quoteDescription">
-          “We are here to put a dent in the universe. Otherwise why else even be here?”
+          “We are here to put a dent in the universe. Otherwise why else even be
+          here?”
         </p>
         <p id="quoteAuthor">
           <em>Steve Jobs</em>

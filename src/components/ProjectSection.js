@@ -47,8 +47,14 @@ function ProjectSection() {
         img="https://cdn.discordapp.com/attachments/953366989634699314/962435589922234388/unknown.png"
         link="https://github.com/MatCalixto/MatCalixto.github.io"
         title="Resume Website"
-        p1={`This website was my first project with react. ${document.body.clientWidth <= 700 ? "And since you are on mobile, why not try the desktop version to see how it looks?" : "And since you are on desktop, why not try opening this page on mobile to see its features and responsiveness?"}`}
-        p2={`Feel free to check out the code in GitHub by clicking the Check Code button bellow or the image ${document.body.clientWidth <= 700 ? "above" : "on the right"}, it is all public!`}
+        p1={`This website was my first project with react. ${
+          document.body.clientWidth <= 700
+            ? "And since you are on mobile, why not try the desktop version to see how it looks?"
+            : "And since you are on desktop, why not try opening this page on mobile to see its features and responsiveness?"
+        }`}
+        p2={`Feel free to check out the code in GitHub by clicking the Check Code button bellow or the image ${
+          document.body.clientWidth <= 700 ? "above" : "on the right"
+        }, it is all public!`}
         button="Check Code"
       ></Display>
       <div id="Education"></div>

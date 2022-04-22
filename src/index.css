@@ -247,7 +247,7 @@
   transition: all 0.3s ease-in-out;
 }
 #unipeLink:hover {
-  color: rgb(168, 168, 168)
+  color: rgb(168, 168, 168);
 }
 #unipeLogo {
   width: 12vw;

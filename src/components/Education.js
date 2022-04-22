@@ -22,11 +22,16 @@ function Education(props) {
           <p className="lowWeightFont">
             Although I am majoring in Computer Science, most of what I have been
             learning was self-taught. <br></br> I am always willing to learn
-            more so that I can become a better professional in my field, even if it means to go in search of courses and online content.
+            more so that I can become a better professional in my field, even if
+            it means to go in search of courses and online content.
           </p>
         </div>
         <a href="https://www.unipe.edu.br/" rel="noreferrer" target="_blank">
-          <img id="unipeLogo" src="https://cdn.discordapp.com/attachments/814863283072925746/966769905829548102/Untitled145_20220421153813.png" alt="Unipe Logo"></img>
+          <img
+            id="unipeLogo"
+            src="https://cdn.discordapp.com/attachments/814863283072925746/966769905829548102/Untitled145_20220421153813.png"
+            alt="Unipe Logo"
+          ></img>
         </a>
       </div>
       <div id="Certificates"></div>

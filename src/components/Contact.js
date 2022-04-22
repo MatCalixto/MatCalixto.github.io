@@ -12,9 +12,7 @@ function Contact(props) {
           </p>
         </div>
         <div className="informationDiv">
-          <p>
-            Address: Br 230 Km 9 - Jp, PB - Brazil - 58106-402
-          </p>
+          <p>Address: Br 230 Km 9 - Jp, PB - Brazil - 58106-402</p>
           <p>Email: Matheus.calixto.lino@gmail.com</p>
           <p>Discord: MatCalixto#9295</p>
         </div>
