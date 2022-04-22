@@ -1,0 +1,58 @@
+import Display from "./Display";
+function ProjectSection() {
+  return (
+    <section id="projectSection">
+      <p className="title">Some of my Projects</p>
+      <Display
+        img="https://cdn.discordapp.com/attachments/953366989634699314/961291395568644096/ArchitectPreview.png"
+        link="https://github.com/MatCalixto/Architect-Porfolio-Website"
+        title="Architect Portfolio Website"
+        p1="This project was made for an architect to display his portfolio, a
+        little more about who he is as a professional in the About Me
+        section as well as contact information in the end of the page."
+        p2="The page is also responsive, in smaller screens, the navigation bar
+        disappears, displaying a menu option in its place, allowing the page
+        to be seen on wide screen devices or in smaller screen devices."
+        p3="JavaScript was used, mainly to make the header invisible in the
+        start of the page for a full screen immersive experience and to make
+        the featured project image scroll slower than the rest of the page."
+        button="Learn More"
+      ></Display>
+      <Display
+        order={true}
+        img="https://cdn.discordapp.com/attachments/953366989634699314/961999253453029496/unknown.png"
+        link="https://github.com/MatCalixto/Bikys-Product-Landing-Page"
+        title="Bikys Product Landing Page"
+        p1="This website was made for a fictional ecommerce store called Bikys."
+        p2="It contains a header, full screen landing image displaying a ciclist
+        doing a dangerous stunt with his bike, a product section with
+        products the company sells, a video related to the company and
+        contact information at the end of the page."
+        button="Learn More"
+      ></Display>
+      <Display
+        img="https://cdn.discordapp.com/attachments/953366989634699314/962027134656847943/unknown.png"
+        link="https://github.com/MatCalixto/Hasa-Project"
+        title="Hasa Project"
+        p1="The Hasa Project is a space-themed website, I created it as an
+        activity during a workshop which took place in march 2022."
+        p2="It includes a header with the logo and navigation bar, as well as a
+        spaceman illustration and some description to what the fictional
+        company envisions, a button which changes colors when being hovered
+        for more information and a footer with copyright information."
+        button="Learn More"
+      ></Display>
+      <Display
+        order={true}
+        img="https://cdn.discordapp.com/attachments/953366989634699314/962435589922234388/unknown.png"
+        link="https://github.com/MatCalixto/MatCalixto.github.io"
+        title="Resume Website"
+        p1={`This website was my first project with react. ${document.body.clientWidth <= 700 ? "And since you are on mobile, why not try the desktop version to see how it looks?" : "And since you are on desktop, why not try opening this page on mobile to see its features and responsiveness?"}`}
+        p2={`Feel free to check out the code in GitHub by clicking the Check Code button bellow or the image ${document.body.clientWidth <= 700 ? "above" : "on the right"}, it is all public!`}
+        button="Check Code"
+      ></Display>
+      <div id="Education"></div>
+    </section>
+  );
+}
+export default ProjectSection;

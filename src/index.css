@@ -1,13 +1,534 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=Fredoka+One&family=Montserrat:wght@300;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* header */
+#header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+/* logo */
+#logoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5vw;
+  padding-left: 5vw;
+}
+#logoName {
+  font-size: 1.4em;
+  transition: all 0.3s ease-in-out;
+}
+#logoName:hover {
+  color: rgb(168, 168, 168);
+}
+/* navbar */
+#navigationBar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+  padding-right: 5vw;
+}
+#menuItem {
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+#menuItem:hover {
+  color: rgb(168, 168, 168);
+}
+#menuDiv {
+  display: none;
+}
+/* main */
+.title {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.bigFontDescription {
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.lowWeightFont {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.movingSection {
+  background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/961708315019214868/Background_Waves.png");
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+#startSection,
+#quoteSection,
+.movingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* start of page */
+#startSection {
+  background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/961708315019214868/Background_Waves.png");
+  background-size: cover;
+  flex-direction: row;
+  height: 100vh;
+  gap: 8vw;
+}
+#startImage {
+  width: 20%;
+  border-radius: 50%;
+}
+#presentingDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#presentingName {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+#presentingDescription {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+#browseButton {
+  background-color: rgb(21, 21, 21);
+  margin-top: 20px;
+  border: none;
+  border-radius: 4em;
+  height: 65px;
+  width: 225px;
+  font-size: 1.3em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#browseButton:hover {
+  background-color: rgb(63, 63, 63);
+}
+/* quote */
+#quoteSection {
+  background-color: rgb(21, 21, 21);
+  height: 40vh;
+}
+#quoteDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+#quoteDescription {
+  font-size: 2em;
+  text-align: center;
+}
+#quoteAuthor {
+  align-self: flex-end;
+  text-align: center;
+}
+/* skills */
+#skillsDiv,
+.skillsGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+.skillsGroup {
+  padding-bottom: 10px;
+}
+.languageDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.languageImage {
+  width: 10vw;
+}
+.languageName {
+  font-weight: 600;
+  font-size: 1.4em;
+  letter-spacing: 0.15em;
+}
+#Projects {
+  padding-bottom: 5px;
+}
+/* projects */
+#projectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(21, 21, 21);
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.projectImage {
+  width: 50vw;
+  transition: all 0.3s ease-in-out;
+}
+.projectImage:hover {
+  transform: scale(1.05);
+}
+.projectDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+}
+.descriptionDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  text-align: justify;
+}
+.projectTitle {
+  font-size: 2em;
+  font-weight: 300;
+}
+.description {
+  font-size: 1em;
+}
+.learnMoreButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  height: 60px;
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 2em;
+  font-size: 1.3em;
+  background-color: #303030;
+  transition: all 0.3s ease-in-out;
+}
+.learnMoreButton:hover {
+  background-color: #232323;
+}
+/* education */
+.educationDiv {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  gap: 20px;
+}
+#educationContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#unipeLink {
+  text-decoration-line: underline;
+  transition: all 0.3s ease-in-out;
+}
+#unipeLink:hover {
+  color: rgb(168, 168, 168)
+}
+#unipeLogo {
+  width: 12vw;
+  transition: all 0.3s ease-in-out;
+}
+#unipeLogo:hover {
+  transform: scale(1.1);
+}
+#Certificates {
+  padding-bottom: 15px;
+}
+/* last section, end of page */
+#Contact {
+  background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/961708315019214868/Background_Waves.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* contact */
+.contactDiv,
+.sitemapDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 10px;
+  padding-left: 5vw;
+}
+.informationDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/* socialMedia */
+#socialMediaBar {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.socialMedia {
+  width: 4em;
+  transition: all 0.3s ease-in-out;
+}
+.socialMedia:hover {
+  transform: scale(1.1);
+}
+/* sitemap */
+.sitemapDiv {
+  padding-left: 0;
+}
+.sitemapItem {
+  font-size: 1em;
+  transition: all 0.3s ease-in-out;
+}
+.sitemapItem:hover {
+  color: rgb(168, 168, 168);
+}
+.logo {
+  align-self: center;
+  width: 20vw;
+  padding-right: 5vw;
+  transition: all 0.3s ease-in-out;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+/* footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(21, 21, 21);
+  height: 5vh;
+}
+#copyright {
+  font-weight: 400;
+}
+/* media query */
+@media only screen and (max-width: 700px) {
+  /* main */
+  .movingSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
+    background-size: cover;
+  }
+  .columnDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    gap: 20px;
+  }
+  /* header */
+  #header {
+    background-color: rgb(21, 21, 21);
+    height: 70px;
+  }
+  #logoName {
+    margin-left: 8vw;
+  }
+  #navigationBar {
+    background-color: rgb(21, 21, 21);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    width: 100%;
+    top: 65px;
+    z-index: 2;
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  #menuDiv {
+    filter: brightness(0) invert(1);
+    display: block;
+    width: 10vw;
+    margin-right: 8vw;
+  }
+  #menuItem {
+    font-size: 0em;
+    transition: all 0.3s ease-in-out;
+  }
+  #bar1,
+  #bar2 {
+    background-color: white;
+    border-radius: 1em;
+    width: 10vw;
+    height: 4px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    transition: all 0.3s;
+  }
+  /* first div */
+  #startSection {
+    background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #presentingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  #startImage {
+    width: 60%;
+    border-radius: 50%;
+  }
+  #browseButton {
+    margin-top: 10px;
+    height: 70px;
+    width: 60vw;
+  }
+  /* quote */
+  #quoteSection {
+    height: 350px;
+  }
+  #quoteDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    width: 80%;
+  }
+  #quoteDescription {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #quoteAuthor {
+    font-size: 1.2em;
+    text-align: center;
+    align-self: flex-end;
+  }
+  /* skills */
+  #skillsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .skillsGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+  }
+  .languageDiv {
+    width: 50vw;
+    gap: 20px;
+  }
+  .languageImage {
+    width: 40vw;
+  }
+  #Projects {
+    padding-bottom: 40px;
+  }
+  /* projects */
+  #projectSection {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    gap: 20px;
+  }
+  .title {
+    text-align: center;
+    font-size: 2em;
+  }
+  .projectDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .projectImage {
+    width: 90vw;
+  }
+  .descriptionDiv {
+    width: 90%;
+    gap: 10px;
+  }
+  .projectTitle {
+    text-align: center;
+  }
+  .learnMoreButton {
+    margin-top: 0;
+    height: 60px;
+    width: 200px;
+  }
+  #Education {
+    margin-bottom: 10px;
+  }
+  /* education */
+  .educationDiv {
+    padding-bottom: 2vh;
+  }
+  #educationContent {
+    flex-direction: column;
+  }
+  #unipeLogo {
+    width: 40vw;
+  }
+  #Certificates {
+    padding-bottom: 30px;
+  }
+  /* end, last div */
+  #Contact {
+    padding-bottom: 0vh;
+    background-image: url("https://cdn.discordapp.com/attachments/953366989634699314/962200383487369246/MobileBackground1.png");
+    background-color: #292828;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+  .contactDiv,
+  .sitemapDiv {
+    gap: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #socialMediaBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2vw;
+    width: 100%;
+  }
+  .socialMedia {
+    width: 25vw;
+  }
 }
