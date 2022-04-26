@@ -4,4 +4,3 @@ This website displays my projects, skills, education, certificates and contact i
 
 ## Preview on a wide screen:
 ![Portfolio Website Preview](https://cdn.discordapp.com/attachments/953366989634699314/962435589922234388/unknown.png)
-
