@@ -6,6 +6,7 @@ function Certificates() {
       <Display
         img="https://cdn.discordapp.com/attachments/945649297087692800/966787208617005157/unknown.png"
         link="https://www.freecodecamp.org/certification/MatheusCalixto/responsive-web-design"
+        link2="https://www.freecodecamp.org/certification/MatheusCalixto/responsive-web-design"
         title="freeCodeCamp Responsive Web Design"
         p1="The freeCodeCamp course started with a learning period with multiples exercises. After finishing those exercises I was presented with 5 web development challenges, each having unique set of challenges to test if I had actually learned what the course intended."
         p2={`The course was fun, but quite demanding, the best thing I got out of it was for sure the different projects I made, you can find them by checking the certificate either by pressing the button below or the image ${

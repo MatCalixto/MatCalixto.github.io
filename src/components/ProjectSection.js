@@ -6,6 +6,7 @@ function ProjectSection() {
       <Display
         img="https://cdn.discordapp.com/attachments/953366989634699314/961291395568644096/ArchitectPreview.png"
         link="https://github.com/MatCalixto/Architect-Porfolio-Website"
+        link2="https://github.com/MatCalixto/Architect-Porfolio-Website"
         title="Architect Portfolio Website"
         p1="This project was made for an architect to display his portfolio, a
         little more about who he is as a professional in the About Me
@@ -22,6 +23,7 @@ function ProjectSection() {
         order={true}
         img="https://cdn.discordapp.com/attachments/953366989634699314/961999253453029496/unknown.png"
         link="https://github.com/MatCalixto/Bikys-Product-Landing-Page"
+        link2="https://github.com/MatCalixto/Bikys-Product-Landing-Page"
         title="Bikys Product Landing Page"
         p1="This website was made for a fictional ecommerce store called Bikys."
         p2="It contains a header, full screen landing image displaying a ciclist
@@ -33,6 +35,7 @@ function ProjectSection() {
       <Display
         img="https://cdn.discordapp.com/attachments/953366989634699314/962027134656847943/unknown.png"
         link="https://github.com/MatCalixto/Hasa-Project"
+        link2="https://github.com/MatCalixto/Hasa-Project"
         title="Hasa Project"
         p1="The Hasa Project is a space-themed website, I created it as an
         activity during a workshop which took place in march 2022."
@@ -44,8 +47,20 @@ function ProjectSection() {
       ></Display>
       <Display
         order={true}
+        img="https://cdn.discordapp.com/attachments/814863283072925746/968307915398217738/unknown.png"
+        link="https://github.com/MatCalixto/To-Do-List-React"
+        link2="https://matcalixto.github.io/To-Do-List-React/"
+        title="To Do List using React Js"
+        p1= "My second React project, a to do list with components that can be created and deleted by the user."
+        p2={`You can check the code in GitHub by pressing the Learn More button below or try out the live page, which is being hosted by GitHub pages, by pressing the image ${
+          document.body.clientWidth <= 700 ? "above." : "on the right."
+        }`}
+        button="Learn More"
+      ></Display>
+      <Display
         img="https://cdn.discordapp.com/attachments/953366989634699314/962435589922234388/unknown.png"
         link="https://github.com/MatCalixto/MatCalixto.github.io"
+        link2="https://github.com/MatCalixto/MatCalixto.github.io"
         title="Resume Website"
         p1={`This website was my first project with react. ${
           document.body.clientWidth <= 700
