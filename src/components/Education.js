@@ -1,7 +1,7 @@
 function Education(props) {
   return (
     <section
-      style={{ backgroundPosition: `center ${props.pos + 500}px` }}
+      style={{ backgroundPosition: `center ${props.pos + 300}px` }}
       className="movingSection"
     >
       <p className="title">Education</p>
