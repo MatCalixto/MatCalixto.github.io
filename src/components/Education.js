@@ -23,7 +23,7 @@ function Education(props) {
             Although I am majoring in Computer Science, most of what I have been
             learning was self-taught. <br></br> I am always willing to learn
             more so that I can become a better professional in my field, even if
-            it means to go in search of courses and online content.
+            it means going in search of courses and online content.
           </p>
         </div>
         <a href="https://www.unipe.edu.br/" rel="noreferrer" target="_blank">
